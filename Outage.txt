@@ -38,11 +38,6 @@
         "entities": []
       },
       {
-        "text": "yeah",
-        "intent": "affirm",
-        "entities": []
-      },
-      {
         "text": "bye",
         "intent": "goodbye",
         "entities": []
