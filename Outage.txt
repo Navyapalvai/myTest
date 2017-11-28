@@ -1,0 +1,184 @@
+
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "can you help me in finding the PI configurations?",
+        "intent": "pi-interface-lookup",
+        "entities": []
+      },
+      {
+        "text": "can you get me the live interfaces in PI?",
+        "intent": "pi-interface-lookup",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "live",
+            "entity": "prod"
+          }
+        ]
+      },
+      {
+        "text": "I need the list of interfaces connecting to ECC",
+        "intent": "pi-interface-lookup",
+        "entities": [
+          {
+            "start": 44,
+            "end": 47,
+            "value": "ECC",
+            "entity": "ecc"
+          }
+        ]
+      },
+      {
+        "text": "we have planned an upgrade on ECC systems, how can we hold the transactions during outage?",
+        "intent": "outage-plan",
+        "entities": [
+          {
+            "start": 30,
+            "end": 33,
+            "value": "ECC",
+            "entity": "ecc"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "upgrade",
+            "entity": "upgrade"
+          },
+          {
+            "start": 83,
+            "end": 89,
+            "value": "outage",
+            "entity": "outage"
+          }
+        ]
+      },
+      {
+        "text": "ok i will check and get back to you",
+        "intent": "await",
+        "entities": []
+      },
+      {
+        "text": "give me sometime to check this, will get back to you later",
+        "intent": "await",
+        "entities": []
+      },
+      {
+        "text": "ok we are good with this, please proceed",
+        "intent": "conformation",
+        "entities": []
+      },
+      {
+        "text": "its going to start on",
+        "intent": "upgrade-details",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "start",
+            "entity": "start"
+          }
+        ]
+      },
+      {
+        "text": "and its going to end on",
+        "intent": "upgrade-details",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "end",
+            "entity": "end"
+          }
+        ]
+      }
+    ]
+  }
+}
